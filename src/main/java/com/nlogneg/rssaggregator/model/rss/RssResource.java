@@ -1,4 +1,4 @@
-package com.nlogneg.rssaggregator.model;
+package com.nlogneg.rssaggregator.model.rss;
 
 import java.io.Serializable;
 import java.net.URL;
@@ -12,6 +12,15 @@ public class RssResource implements Serializable {
 
 	private static final long serialVersionUID = 8349072298806076908L;
 	
+	//ORM Stuff
+	private Long id;
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	private String title;
 	private String description;
 	private URL url;

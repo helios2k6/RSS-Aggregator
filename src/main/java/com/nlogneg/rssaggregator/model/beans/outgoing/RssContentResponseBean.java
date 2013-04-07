@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.net.URL;
 import java.util.ArrayList;
 
-import com.nlogneg.rssaggregator.model.RssItem;
+import com.nlogneg.rssaggregator.model.rss.RssItem;
 
 public class RssContentResponseBean implements Serializable {
 
