@@ -16,6 +16,9 @@
 		<junit.version>4.7</junit.version>
 		<rome.version>1.0</rome.version>
 		<joda.time.version>2.2</joda.time.version>
+		<hibernate.version>4.2.0.Final</hibernate.version>
+		<jdom.version>2.0.2</jdom.version>
+		<log4net.version>1.2.14</log4net.version>
 	</properties>
 	<dependencies>
 
@@ -60,8 +63,23 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>1.2.14</version>
+			<version>${log4net.version}</version>
 		</dependency>
+
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+		<!-- JDOM -->
+		<dependency>
+			<groupId>org.jdom</groupId>
+			<artifactId>jdom</artifactId>
+			<version>${jdom.version}</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
